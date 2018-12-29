@@ -121,7 +121,7 @@ Thread 1 (LWP 14214):
 ```
 
 from the ascii man page I could look up that `0x2e` is dot, so the last two
-dots leaked into the return pointer. Disassembly `objdump -D 1996 | vim -R -`
+dots leaked into the return pointer. Disassembly `objdump -D 1996 | vim -R +'set ft=asm' -`
 
 ```
 0000000000400897 <_Z11spawn_shellv>:
